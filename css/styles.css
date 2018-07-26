@@ -1,0 +1,242 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 15px;
+}
+
+/* Header */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: url("../img/header.jpg") center;
+  background-size: cover;
+}
+
+.background {
+  background-color: rgba(47, 34, 164, 0.49);
+  text-align: center;
+  min-height: 66vw;
+  color: #ffffff;
+}
+
+.background .tellNumber {
+  text-align: right;
+  padding: 8vh 8vh 0 0;
+}
+
+.background .tellNumber a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.background .tellNumber a:hover {
+  color: #f6ae48;
+}
+
+.background h1 {
+  font-size: 3.2vw;
+  margin: 6vh 9vh 5vh 9vh;
+  line-height: 5vw;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.background .headerText {
+  font-size: 1.5vw;
+  margin: 0 25vh 5vh 25vh;
+  line-height: 2.5vw;
+  letter-spacing: 1.2px;
+}
+
+.background :nth-child(4) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.background .BoxItem {
+  margin: 0 20px;
+  min-width: 27vh;
+  background: url("../img/orderheder.png") no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.background .BoxItem .LogoBox1,
+.background .BoxItem .LogoBox2,
+.background .BoxItem .LogoBox3 {
+  position: absolute;
+  font-size: 5vh;
+  top: -2.4vh;
+}
+
+.background .BoxItem .LogoBox1 {
+  left: 10.7vh;
+}
+
+.background .BoxItem .LogoBox2 {
+  left: 10.5vh;
+}
+
+.background .BoxItem .LogoBox3 {
+  left: 11.4vh;
+}
+
+.background .BoxItem > div {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  padding: 3.5vh 0 0.5vh 0;
+}
+
+.background .BoxItem > p {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  padding-bottom: 3vh;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  min-height: 9vh;
+  border-bottom: 1.5px solid #85858E;
+}
+
+.navigation .menulogo {
+  flex-grow: 4;
+}
+
+.navigation .menuItem {
+  flex-grow: 1;
+  font-size: 1.5vw;
+  font-family: 'Gaegu', cursive;
+}
+
+.navigation .menulogo,
+.navigation .menuItem {
+  align-self: center;
+  flex-basis: 40px;
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation a:hover {
+  color: #f6ae48;
+}

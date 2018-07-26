@@ -1,0 +1,25 @@
+.profitItems {
+  margin-left: -20px;
+  margin-right: -20px;
+  font-size: 0;
+  text-align: center;
+}
+
+.profitItem {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.humans .items {
+  margin-left: -20px;
+  margin-right: -20px;
+  font-size: 0;
+  text-align: center;
+}
+
+.humans .items .item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
