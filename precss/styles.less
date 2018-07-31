@@ -70,7 +70,7 @@ header {
         });
 
         font-size: 1.5vw;
-        margin: 0 25vh 5vh 25vh;
+        margin: 0 25% 5% 25%;
         line-height: 2.5vw; 
         letter-spacing: 1.2px; 
               
@@ -152,8 +152,7 @@ header {
 .navigation {
 
     .to(599px, {
-        display: block;
-                   
+        display: block;          
     });
 
     display: flex;   
@@ -161,6 +160,11 @@ header {
     border-bottom: 1.5px solid #85858E;
 
     .menulogo {
+
+        .to(599px, {
+            text-align: left;      
+        });
+
         flex-grow: 4;        
     }
 
@@ -187,7 +191,7 @@ header {
         color: black;
     }
     
-    a:hover {
+    a:hover{
         color: #f6ae48;	
     }
 }

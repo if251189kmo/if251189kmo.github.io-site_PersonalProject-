@@ -162,7 +162,7 @@ header {
 
 .background .headerText {
   font-size: 1.5vw;
-  margin: 0 25vh 5vh 25vh;
+  margin: 0 25% 5% 25%;
   line-height: 2.5vw;
   letter-spacing: 1.2px;
 }
@@ -289,6 +289,10 @@ header {
 
   .navigation {
     display: block;
+  }
+
+  .navigation .menulogo {
+    text-align: left;
   }
 
   .navigation .menuItem {
