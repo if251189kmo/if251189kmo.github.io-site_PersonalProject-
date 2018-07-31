@@ -211,7 +211,7 @@ header {
   font-weight: bold;
   letter-spacing: 2.4px;
   padding: 3.5vh 0 0.5vh 0;
-  animation: example 3s linear 2s 3 alternate;
+  animation: example 0.3s linear 1s infinite alternate;
   /*
             animation-name: example;
             animation-duration: 3s; // продолжительноsть анимации
