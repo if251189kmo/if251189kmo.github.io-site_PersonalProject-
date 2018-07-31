@@ -138,7 +138,7 @@ header {
 
 .background .tellNumber {
   text-align: right;
-  padding: 5vh 8vh 0 0;
+  padding: 6% 5% 0 0;
   font-size: 1.3vw;
   font-weight: bold;
 }
@@ -154,7 +154,7 @@ header {
 
 .background h1 {
   font-size: 3.2vw;
-  margin: 4vh 9vh 5vh 9vh;
+  margin: 4% 9% 5% 9%;
   line-height: 5vw;
   letter-spacing: 2px;
   font-weight: 700;
