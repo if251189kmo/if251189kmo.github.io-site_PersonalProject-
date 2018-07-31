@@ -30,7 +30,7 @@ header {
 .background {
     background-color:rgba(47, 34, 164, 0.49);
     text-align: center;    
-    min-height: 66vw;
+    min-height: 90vh;
     color: #ffffff;
     
     .tellNumber {
@@ -49,7 +49,12 @@ header {
         } 
     }
 
-    h1 {        
+    h1 {
+        
+        .to(599px, {
+            color: red;            
+        });
+
         font-size: 3.2vw;    
         margin: 8vh 9vh 5vh 9vh;
         line-height: 5vw;
@@ -58,6 +63,12 @@ header {
     }
 
     .headerText {
+
+        .to(599px, {
+            font-size: 1.5vw;
+            margin: 0 10vh 3vh 10vh;                             
+        });
+
         font-size: 1.5vw;
         margin: 0 25vh 5vh 25vh;
         line-height: 2.5vw; 
@@ -71,7 +82,13 @@ header {
         justify-content: center;
     }
 
-    .BoxItem {
+    .BoxItem { 
+        
+        .to(599px, {
+            color: red;
+            margin: 2vh 1vh;            
+        });
+
         margin: 6vh 2.5vh;
         width: 27vh;
         background: url("../img/orderheder.png") no-repeat center;
@@ -103,7 +120,23 @@ header {
             font-size: 4vw;
             font-weight: bold;	
             letter-spacing: 2.4px;
-            padding: 3.5vh 0 0.5vh 0;	
+            padding: 3.5vh 0 0.5vh 0;
+            
+            animation: example 3s linear 2s 3 alternate;
+            
+/*
+            animation-name: example;
+            animation-duration: 3s; // продолжительноsть анимации
+            animation-delay: 2s; // когда начинаетsа анимация
+            animation-iteration-count: 3; // повторений анимации (infinite - беsконечноsть)
+            animation-direction: alternate;  // анимация работает вперед и назад
+            animation-timing-function: linear; // sкороsть анимиции
+*/
+        }
+
+        @keyframes example {
+            from {color: #ffffff;}
+            to   {color: green;}
         }
 
         > p {
@@ -117,16 +150,26 @@ header {
 /* Navigation */
 
 .navigation {
+
+    .to(599px, {
+        display: block;
+                   
+    });
+
     display: flex;   
-    min-height: 9vh;
+    min-height: 10vh;
     border-bottom: 1.5px solid #85858E;
 
     .menulogo {
-        flex-grow: 4;
-        
+        flex-grow: 4;        
     }
 
     .menuItem {
+
+        .to(599px, {
+            font-size: 3.5vw;                      
+        });
+
         flex-grow: 1;
         font-size: 1.5vw;
         font-family: 'Gaegu', cursive;

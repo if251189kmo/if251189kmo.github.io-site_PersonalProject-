@@ -1,16 +1,16 @@
 Window.onload = function () {
     
-    var asks = document.querySelectorAll('.item .ask');
+    var menuItem = document.querySelectorAll('.navigation .menuItem');
 
-    for (var i = 0; i < asks.length; i++) {
-        asks[i].onclick = function () {
-            var answer = this.parentNode.children[1];
+    for (var i = 0; i < menuItem.length; i++) {
+        menuItem[i].onclick = function () {
+            var open = this.parentNode.children[1];
 
-            if (answer.style.display == 'block') {
-                answer.style.display == 'none';
+            if (open.style.display == 'block') {
+                open.style.display == 'none';
             }
             else {
-                answer.style.display = 'block';
+                open.style.display = 'block';
             }
         }
         
