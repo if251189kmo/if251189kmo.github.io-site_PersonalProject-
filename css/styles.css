@@ -240,36 +240,67 @@ header {
 
 /* Navigation */
 
-.navigation {
+.navBar {
   display: flex;
   min-height: 10vh;
   border-bottom: 1.5px solid #85858E;
 }
 
-.navigation .menulogo {
-  flex-grow: 4;
-}
-
-.navigation .menuItem {
-  flex-grow: 1;
-  font-size: 1.5vw;
-  font-family: 'Gaegu', cursive;
-}
-
-.navigation .menulogo,
-.navigation .menuItem {
-  align-self: center;
-  flex-basis: 40px;
-  text-align: center;
-}
-
-.navigation a {
+.navBar a {
   text-decoration: none;
   color: black;
 }
 
-.navigation a:hover {
+.navBar a:hover {
   color: #f6ae48;
+}
+
+.ToggleBar {
+  align-self: center;
+  flex-basis: 250px;
+  text-align: center;
+}
+
+.ToggleBar .menulogo {
+  flex-grow: 4;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation .menuItem {
+  flex-grow: 2;
+  font-size: 1.5vw;
+  font-family: 'Gaegu', cursive;
+  align-self: center;
+}
+
+/*
+
+.navigation {
+
+    
+
+    
+    
+    
+}
+
+
+
+.nav {
+
+    
+
+}
+
+*/
+
+@media screen and (min-width: 599px) {
+  .ToggleBar .menuToggle {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -287,15 +318,26 @@ header {
     margin: 2vh 1vh;
   }
 
-  .navigation {
-    display: block;
+  .navBar {
+    flex-wrap: wrap;
   }
 
-  .navigation .menulogo {
-    text-align: left;
+  .ToggleBar {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+  }
+
+  .ToggleBar .menulogo {
+    flex-grow: 0;
+  }
+
+  .navigation {
+    display: inline-block;
   }
 
   .navigation .menuItem {
     font-size: 3.5vw;
+    text-align: center;
   }
 }

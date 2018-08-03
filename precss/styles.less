@@ -149,43 +149,15 @@ header {
 
 /* Navigation */
 
-.navigation {
-
-    .to(599px, {
-        display: block;          
+.navBar {
+    .to(599px, {       
+        flex-wrap: wrap;         
     });
-
     display: flex;   
     min-height: 10vh;
     border-bottom: 1.5px solid #85858E;
-
-    .menulogo {
-
-        .to(599px, {
-            text-align: left;      
-        });
-
-        flex-grow: 4;        
-    }
-
-    .menuItem {
-
-        .to(599px, {
-            font-size: 3.5vw;                      
-        });
-
-        flex-grow: 1;
-        font-size: 1.5vw;
-        font-family: 'Gaegu', cursive;
-        
-    }
-
-    .menulogo, .menuItem {
-        align-self: center;
-        flex-basis: 40px;
-        text-align: center;
-    }
     
+
     a {
         text-decoration: none;
         color: black;
@@ -196,11 +168,110 @@ header {
     }
 }
 
+.ToggleBar {
+
+    .to(599px, {       
+        display: flex;        
+        justify-content: space-around;
+        flex-basis: 100%;    
+    });
+
+    align-self: center;
+    flex-basis: 250px;
+    text-align: center;
+
+    .menulogo {
+        .to(599px, {       
+            flex-grow:  0;            
+        });
+        
+        flex-grow: 4;        
+    }
+
+    .menuToggle {
+        .from(599px, {
+            display: none;      
+        });
+    }
+}
+
+.navigation {
+    
+    .to(599px, {
+        display: inline-block;
+        
+        
+    });
+
+    display: flex;
+    
+    .menuItem {      
+        
+        .to(599px, {
+            font-size: 3.5vw;
+            text-align: center;
+        });
+        
+        flex-grow: 2;
+        font-size: 1.5vw;
+        font-family: 'Gaegu', cursive;
+        align-self: center;
+    }
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.navigation {
+
+    
+
+    
+    
+    
+}
+
+
+
+.nav {
+
+    
+
+}
+
+*/
 
 
 
