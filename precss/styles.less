@@ -85,7 +85,6 @@ header {
     .BoxItem { 
         
         .to(599px, {
-            color: red;
             margin: 2vh 1vh;            
         });
 
@@ -150,17 +149,83 @@ header {
 /* Navigation */
 
 .navBar {
-    .col();
-    .size(24);         
+    .to(599px, {       
+        flex-wrap: wrap;
+    });
+
+    min-height: 9.5vh;    
     border-bottom: 1.5px solid #85858E;
+    display: flex;
+    align-items: center;
+
+    a {
+        .to(599px, {       
+            font-size: 4vw;
+        });
+
+        text-decoration: none;
+        color: black;
+        font-size: 1.5vw;
+        font-family: 'Gaegu', cursive;
+    }
+    
+    a:hover{
+        color: #f6ae48;	
+    }
 }
 
 .ToggleBar{
+    .to(599px, {       
+        display: flex;        
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 15px;    
+    });
+    
     display: flex;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    
+    .menuLogo {
+       // вирiвнювання логотипа!!!
+    }
+
+    .menuToggle {
+        .from(599px, {
+            display: none;      
+        });
+    }
+
+    .menuOpen {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: green;
+        border-radius: 50%;
+        position: relative;
+
+        span {
+            position: absolute;
+            width: 15px;            
+            height: 2px;
+            top: 50%;
+            background-color: #f6ae48;
+        }
+    }
 }
 
 .navigation{
+    .to(599px, {
+        display: block;
+        text-align: center;
+        width: 100%;      
+    });
     display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    margin: 0 5%;
+    justify-content: space-between;
 }
 
 
@@ -192,92 +257,6 @@ header {
 
 
 /*
-
-
-
-    .navBar {
-    .to(599px, {       
-        flex-wrap: wrap;         
-    });
-    display: flex;   
-    min-height: 10vh;
-    border-bottom: 1.5px solid #85858E;
-    
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    a:hover{
-        color: #f6ae48;	
-    }
-}
-
-.ToggleBar {
-
-    .to(599px, {       
-        display: flex;        
-        justify-content: space-around;
-        flex-basis: 100%;    
-    });
-
-    align-self: center;
-    flex-basis: 250px;
-    text-align: center;
-
-    .menulogo {
-        .to(599px, {       
-            flex-grow:  0;            
-        });
-        
-        flex-grow: 4;        
-    }
-
-    .menuToggle {
-        .from(599px, {
-            display: none;      
-        });
-    }
-}
-
-.navigation {
-    
-    .to(599px, {
-        display: inline-block;
-        
-        
-    });
-
-    display: flex;
-    
-    .menuItem {      
-        
-        .to(599px, {
-            font-size: 3.5vw;
-            text-align: center;
-        });
-        
-        flex-grow: 2;
-        font-size: 1.5vw;
-        font-family: 'Gaegu', cursive;
-        align-self: center;
-    }
-}
-
-
-    
-    
-    
-}
-
-
-
-.nav {
-
-    
-
-}
 
 */
 

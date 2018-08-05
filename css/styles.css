@@ -241,111 +241,64 @@ header {
 /* Navigation */
 
 .navBar {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: calc(100% - 40px);
+  min-height: 9.5vh;
   border-bottom: 1.5px solid #85858E;
+  display: flex;
+  align-items: center;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5vw;
+  font-family: 'Gaegu', cursive;
+}
+
+.navBar a:hover {
+  color: #f6ae48;
 }
 
 .ToggleBar {
   display: flex;
+  width: 30%;
+  text-align: center;
+  justify-content: center;
+}
+
+.ToggleBar .menuOpen {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ToggleBar .menuOpen span {
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  top: 50%;
+  background-color: #f6ae48;
 }
 
 .navigation {
   display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  margin: 0 5%;
+  justify-content: space-between;
 }
 
 /*
 
-
-
-    .navBar {
-    .to(599px, {       
-        flex-wrap: wrap;         
-    });
-    display: flex;   
-    min-height: 10vh;
-    border-bottom: 1.5px solid #85858E;
-    
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    a:hover{
-        color: #f6ae48;	
-    }
-}
-
-.ToggleBar {
-
-    .to(599px, {       
-        display: flex;        
-        justify-content: space-around;
-        flex-basis: 100%;    
-    });
-
-    align-self: center;
-    flex-basis: 250px;
-    text-align: center;
-
-    .menulogo {
-        .to(599px, {       
-            flex-grow:  0;            
-        });
-        
-        flex-grow: 4;        
-    }
-
-    .menuToggle {
-        .from(599px, {
-            display: none;      
-        });
-    }
-}
-
-.navigation {
-    
-    .to(599px, {
-        display: inline-block;
-        
-        
-    });
-
-    display: flex;
-    
-    .menuItem {      
-        
-        .to(599px, {
-            font-size: 3.5vw;
-            text-align: center;
-        });
-        
-        flex-grow: 2;
-        font-size: 1.5vw;
-        font-family: 'Gaegu', cursive;
-        align-self: center;
-    }
-}
-
-
-    
-    
-    
-}
-
-
-
-.nav {
-
-    
-
-}
-
 */
+
+@media screen and (min-width: 599px) {
+  .ToggleBar .menuToggle {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 599px) {
   .background h1 {
@@ -358,7 +311,27 @@ header {
   }
 
   .background .BoxItem {
-    color: red;
     margin: 2vh 1vh;
+  }
+
+  .navBar {
+    flex-wrap: wrap;
+  }
+
+  .navBar a {
+    font-size: 4vw;
+  }
+
+  .ToggleBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 15px;
+  }
+
+  .navigation {
+    display: block;
+    text-align: center;
+    width: 100%;
   }
 }
