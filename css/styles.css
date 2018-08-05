@@ -241,46 +241,96 @@ header {
 /* Navigation */
 
 .navBar {
-  display: flex;
-  min-height: 10vh;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
   border-bottom: 1.5px solid #85858E;
 }
 
-.navBar a {
-  text-decoration: none;
-  color: black;
-}
-
-.navBar a:hover {
-  color: #f6ae48;
-}
-
 .ToggleBar {
-  align-self: center;
-  flex-basis: 250px;
-  text-align: center;
-}
-
-.ToggleBar .menulogo {
-  flex-grow: 4;
+  display: flex;
 }
 
 .navigation {
   display: flex;
-}
-
-.navigation .menuItem {
-  flex-grow: 2;
-  font-size: 1.5vw;
-  font-family: 'Gaegu', cursive;
-  align-self: center;
 }
 
 /*
 
-.navigation {
 
+
+    .navBar {
+    .to(599px, {       
+        flex-wrap: wrap;         
+    });
+    display: flex;   
+    min-height: 10vh;
+    border-bottom: 1.5px solid #85858E;
     
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover{
+        color: #f6ae48;	
+    }
+}
+
+.ToggleBar {
+
+    .to(599px, {       
+        display: flex;        
+        justify-content: space-around;
+        flex-basis: 100%;    
+    });
+
+    align-self: center;
+    flex-basis: 250px;
+    text-align: center;
+
+    .menulogo {
+        .to(599px, {       
+            flex-grow:  0;            
+        });
+        
+        flex-grow: 4;        
+    }
+
+    .menuToggle {
+        .from(599px, {
+            display: none;      
+        });
+    }
+}
+
+.navigation {
+    
+    .to(599px, {
+        display: inline-block;
+        
+        
+    });
+
+    display: flex;
+    
+    .menuItem {      
+        
+        .to(599px, {
+            font-size: 3.5vw;
+            text-align: center;
+        });
+        
+        flex-grow: 2;
+        font-size: 1.5vw;
+        font-family: 'Gaegu', cursive;
+        align-self: center;
+    }
+}
+
 
     
     
@@ -297,12 +347,6 @@ header {
 
 */
 
-@media screen and (min-width: 599px) {
-  .ToggleBar .menuToggle {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 599px) {
   .background h1 {
     color: red;
@@ -316,28 +360,5 @@ header {
   .background .BoxItem {
     color: red;
     margin: 2vh 1vh;
-  }
-
-  .navBar {
-    flex-wrap: wrap;
-  }
-
-  .ToggleBar {
-    display: flex;
-    justify-content: space-around;
-    flex-basis: 100%;
-  }
-
-  .ToggleBar .menulogo {
-    flex-grow: 0;
-  }
-
-  .navigation {
-    display: inline-block;
-  }
-
-  .navigation .menuItem {
-    font-size: 3.5vw;
-    text-align: center;
   }
 }
