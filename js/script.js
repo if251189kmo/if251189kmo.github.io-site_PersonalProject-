@@ -1,3 +1,32 @@
+window.onload = function () {
+    openMenu();
+}
+
+function openMenu() {
+    document.querySelector('.menuOpen').onclick = function () {
+        document.getElementByСlassName('menuOpen').style.color = "blue";;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 Window.onload = function () {
     
     var menuItem = document.querySelectorAll('.navigation .menuItem');
@@ -16,3 +45,5 @@ Window.onload = function () {
         
     }
 }
+
+*/

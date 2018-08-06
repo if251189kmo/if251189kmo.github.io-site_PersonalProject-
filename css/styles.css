@@ -272,14 +272,37 @@ header {
   background-color: green;
   border-radius: 50%;
   position: relative;
+  /* Batton TogleBar */
 }
 
-.ToggleBar .menuOpen span {
+.ToggleBar .menuOpen span,
+.ToggleBar .menuOpen span::before,
+.ToggleBar .menuOpen span::after {
   position: absolute;
-  width: 15px;
+  width: 20px;
   height: 2px;
   top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
   background-color: #f6ae48;
+}
+
+.ToggleBar .menuOpen span::before,
+.ToggleBar .menuOpen span::after {
+  content: '';
+}
+
+.ToggleBar .menuOpen span::before {
+  transform: translateY(-5px);
+}
+
+.ToggleBar .menuOpen span::after {
+  transform: translateY(5px);
+}
+
+.ToggleBar .menuOpen-aktive span::before {
+  transform: rotate(35deg);
 }
 
 .navigation {
