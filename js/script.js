@@ -4,9 +4,20 @@ window.onload = function () {
 
 function openMenu() {
     document.querySelector('.menuOpen').onclick = function () {
-        document.getElementByСlassName('menuOpen').style.color = "blue";;
+        
+        if (document.querySelector('.navigation').style.display == "block") {
+            document.querySelector('.navigation').style.display = "none";
+        }
+        
+        else {
+            document.querySelector('.navigation').style.display = "block";
+        }
+            
     }
 }
+
+
+
 
 
 
