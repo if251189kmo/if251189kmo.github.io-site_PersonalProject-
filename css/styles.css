@@ -353,7 +353,7 @@ header {
   }
 
   .navigation {
-    display: block;
+    display: none;
     text-align: center;
     width: 100%;
   }
