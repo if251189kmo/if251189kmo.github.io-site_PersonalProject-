@@ -14,13 +14,17 @@ function openMenu() {
             menu.classList.remove('navigation');
             menu.classList.add('activeNav');
             
+            toggleMenu.classList.add('menuOpen-aktive');
+
             setTimeout(function(){ window.scrollTo( 0, 130 ) });           
         }
 
         else {
 
             menu.classList.remove('activeNav');
-            menu.classList.add('navigation'); 
+            menu.classList.add('navigation');
+            
+            toggleMenu.classList.remove('menuOpen-aktive');
             
             setTimeout(function(){ window.scrollTo( 0, 0 ) });
         }                     

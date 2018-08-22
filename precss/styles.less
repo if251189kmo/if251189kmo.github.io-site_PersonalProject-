@@ -222,7 +222,7 @@ header {
         span::after {
             content: '';
             display: block;
-            transition: 0.5s;
+            transition: 0.2s;
         }
 
         span::before {
@@ -234,9 +234,16 @@ header {
     }
 
     .menuOpen-aktive {
-        span::before {
-            transform: rotate(35deg);
+        
+        span::after {
+            transform: rotate(45deg);
         }
+        span {
+            height: 0;
+        }
+        span::before {
+            transform: rotate(-45deg);
+        }        
     }
 }
 

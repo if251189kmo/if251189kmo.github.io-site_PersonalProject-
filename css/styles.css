@@ -292,7 +292,7 @@ header {
 .ToggleBar .menuOpen span::after {
   content: '';
   display: block;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .ToggleBar .menuOpen span::before {
@@ -303,8 +303,16 @@ header {
   transform: translateY(5px);
 }
 
+.ToggleBar .menuOpen-aktive span::after {
+  transform: rotate(45deg);
+}
+
+.ToggleBar .menuOpen-aktive span {
+  height: 0;
+}
+
 .ToggleBar .menuOpen-aktive span::before {
-  transform: rotate(35deg);
+  transform: rotate(-45deg);
 }
 
 .navigation {
