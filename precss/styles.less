@@ -192,7 +192,7 @@ header {
     // }
 
     .menuToggle {
-        .from(599px, {
+        .from(600px, {
             display: none;      
         });
     }
@@ -241,24 +241,37 @@ header {
 }
 
 .navigation{
-    .to(599px, {
+    .to(599px, {       
         display: none;
         text-align: center;
-        width: 100%;      
+        width: 100%;          
     });
+   
+   
     display: flex;
     width: 70%;
     justify-content: flex-end;
     margin: 0 5%;
     justify-content: space-between;
     
-    
+
 }
 
-
-
-
-
+.activeNav {
+    
+    .to(599px, {       
+        display: block;
+        text-align: center;
+        width: 100%;            
+    });
+    
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    margin: 0 5%;
+    justify-content: space-between;
+    
+}
 
 
 

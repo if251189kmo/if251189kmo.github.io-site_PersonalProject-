@@ -4,15 +4,28 @@ window.onload = function () {
 
 function openMenu() {
     
-    var toggleMenu = document.querySelector('.menuOpen');
-    var menu = document.querySelector('.navBar');
+    var toggleMenu = document.querySelector('.menuOpen'); // кнопка меню
+    var menu = document.querySelector('.navigation'); // саме немю навігації
 
     toggleMenu.onclick = function () {
-    
-        menu.classList.toggle('activeBar');
-                       
-        };
+        
+        if (menu.classList.contains("navigation")) {
+            
+            menu.classList.remove('navigation');
+            menu.classList.add('activeNav');
+            
+            setTimeout(function(){ window.scrollTo( 0, 130 ) });           
+        }
+
+        else {
+
+            menu.classList.remove('activeNav');
+            menu.classList.add('navigation'); 
+            
+            setTimeout(function(){ window.scrollTo( 0, 0 ) });
+        }                     
     };
+};
 
 
 

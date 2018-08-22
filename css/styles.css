@@ -315,11 +315,19 @@ header {
   justify-content: space-between;
 }
 
+.activeNav {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  margin: 0 5%;
+  justify-content: space-between;
+}
+
 /*
 
 */
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 600px) {
   .ToggleBar .menuToggle {
     display: none;
   }
@@ -356,6 +364,12 @@ header {
 
   .navigation {
     display: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .activeNav {
+    display: block;
     text-align: center;
     width: 100%;
   }
