@@ -291,6 +291,8 @@ header {
 .ToggleBar .menuOpen span::before,
 .ToggleBar .menuOpen span::after {
   content: '';
+  display: block;
+  transition: 0.5s;
 }
 
 .ToggleBar .menuOpen span::before {
