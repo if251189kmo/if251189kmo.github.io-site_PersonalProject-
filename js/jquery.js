@@ -1,15 +1,17 @@
-(function ($) {
-    $(function () {
-        $('icon').on('click', function () {
-            $(this).closest('.menu').toggleClass('menu-open');
-        });
+/*
+$(document).ready(function(){
+    $(".menuOpen").click(function(){
+        
+        $(".navigation").animate({height: 'toggle'},1000);
+        
     });
-})(jQuery);
-/* 
-
-$('.menuOpen').on('click', function (e) {
-    e.preventDefault;
-    $(this).toggleclass('menuOpen-aktive')
 });
+*/
 
- */
+
+
+
+
+
+
+

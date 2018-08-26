@@ -1,4 +1,4 @@
-/*window.onload = function () {
+window.onload = function () {
     openMenu();
 }
 
@@ -15,8 +15,11 @@ function openMenu() {
             menu.classList.add('activeNav');
             
             toggleMenu.classList.add('menuOpen-aktive');
+            
+            
+            setTimeout(function(){ window.scrollTo( 0, 150 ) });
 
-            setTimeout(function(){ window.scrollTo( 0, 130 ) });           
+
         }
 
         else {
@@ -27,11 +30,11 @@ function openMenu() {
             toggleMenu.classList.remove('menuOpen-aktive');
             
             setTimeout(function(){ window.scrollTo( 0, 0 ) });
+            
         }                     
     };
 };
 
-*/
 
 
 

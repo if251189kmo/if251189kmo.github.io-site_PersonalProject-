@@ -375,13 +375,11 @@ header {
     text-align: center;
     width: 100%;
     bottom: 100px;
-    transition: top 1s ease-out 0.5s;
   }
 
   .activeNav {
     display: block;
     text-align: center;
     width: 100%;
-    transition: top 1s ease-out 0.5s;
   }
 }
