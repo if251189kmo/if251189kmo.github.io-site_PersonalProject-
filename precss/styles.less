@@ -51,7 +51,7 @@ header {
         }
 
         a:hover {
-            color: #f6ae48;	
+            color: #3ef3d5fa;	
         } 
     }
 
@@ -59,10 +59,10 @@ header {
         
         .to(599px, {
             font-size: 5vw;
-            padding-bottom: 2vh;
-            font-family: Gaegu;              
+            padding-bottom: 2vh;                      
         });
-
+        
+        font-family: Gaegu;   
         font-size: 3.2vw;    
         margin: 4% 9% 5% 9%;
         line-height: 5vw;
@@ -94,7 +94,7 @@ header {
         color: #00b9e7;
         height: 20vh;
         width: 30vh;
-//      background: url("../img/orderheder.png") no-repeat center;
+        background: url("../img/orderheder2.png") no-repeat center;
 
         -webkit-transform: scale(1.2,1.2);
         -webkit-transition-timing-function: ease-out;
@@ -135,8 +135,49 @@ header {
         
         > a {      
             color: #00b9e7;
+            transition: 2s;  
+        }
+        > a:hover {      
+            color: rgba(94, 255, 0, 0.993);           
+            
+
+        }
+
+        // підкреслення ссилки        
+        a:hover::before{
+            width: 100%;
+        }
+
+        a:hover::after{
+            width: 100%;
             
         }
+
+        a::after{
+            display: block;
+            position: relative;
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: #00b9e7;
+            transition: width .4s ease-in-out;
+            
+        }
+
+        a::before{
+            
+            display: block;
+            position: relative;
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: #00b9e7;
+            transition: width .4s ease-in-out, right .4s ease-in-out;
+            
+            
+        }
+
+
     }
 
     .BoxItem { 
@@ -202,6 +243,8 @@ header {
             text-decoration: none;                   
             font-size: 1.5vw;
             color: #ffffff;
+            display: inline-block;
+            position: relative;
              
         }       
     }
@@ -218,7 +261,7 @@ header {
     border-bottom: 1.5px solid #85858E;
     display: flex;
     align-items: center;
-
+    
     a {
         .to(599px, {       
             font-size: 4vw;
@@ -227,53 +270,52 @@ header {
         text-decoration: none;
         color: black;
         font-size: 1.5vw;
-        font-family: 'Gaegu', cursive;        
-    }
-    
-    .menuItem {  
-        display: inline-block;
-        position: relative;
-    }
+        font-family: 'Gaegu', cursive;              
+    }    
+    .menuItem {
+        a {
+            display: inline-block;
+            position: relative;        
+        }
+        
+        a:hover{
+            color: #3ef3d5fa;        	
+        }
 
-    a:hover{
-        color: #f6ae48;        	
-    }
+    // підкреслення ссилки        
+        a:hover::before{
+            width: 50.5%;
+            left: 0;
+        }
 
-    // підкреслення ссилки
-    
-    .menuItem:hover::before{
-        width: 50.5%;
-        left: 0;
-    }
-    .menuItem:hover::after{
-        width: 50.5%;
-    }
+        a:hover::after{
+            width: 50.5%;
+        }
 
-    .menuItem::after{
-        display: block;
-        position: absolute;
-        content: "";
-        height: 2px;
-        width: 0;
-        background-color: #00b9e7;
-        transition: width .3s ease-in-out;
-        left: 50%;
-        bottom: 0;
+        a::after{
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: #00b9e7;
+            transition: width .3s ease-in-out;
+            left: 50%;
+            bottom: 0;
+        }
+
+        a::before{
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: #00b9e7;
+            transition: width .3s ease-in-out, left .3s ease-in-out;
+            left: 50%;
+            bottom: 0;
+        }
     }
-
-    .menuItem::before{
-        display: block;
-        position: absolute;
-        content: "";
-        height: 2px;
-        width: 0;
-        background-color: #00b9e7;
-        transition: width .3s ease-in-out, left .3s ease-in-out;
-        left: 50%;
-        bottom: 0;
-    }
-
-
 }
 
 .ToggleBar{
@@ -289,6 +331,9 @@ header {
     text-align: center;
     justify-content: center;
     
+    .menuLogo :hover{
+        color: #3ef3d5fa;        	
+    }
     // .menuLogo {
        // вирiвнювання логотипа!!!
     // }

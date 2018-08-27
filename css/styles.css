@@ -150,10 +150,11 @@ header {
 }
 
 .background .tellNumber a:hover {
-  color: #f6ae48;
+  color: #3ef3d5fa;
 }
 
 .background h1 {
+  font-family: Gaegu;
   font-size: 3.2vw;
   margin: 4% 9% 5% 9%;
   line-height: 5vw;
@@ -178,6 +179,7 @@ header {
   color: #00b9e7;
   height: 20vh;
   width: 30vh;
+  background: url("../img/orderheder2.png") no-repeat center;
   -webkit-transform: scale(1.2, 1.2);
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 550ms;
@@ -222,6 +224,39 @@ header {
 
 .background .BoxItem:hover > a {
   color: #00b9e7;
+  transition: 2s;
+}
+
+.background .BoxItem:hover > a:hover {
+  color: rgba(94, 255, 0, 0.993);
+}
+
+.background .BoxItem:hover a:hover::before {
+  width: 100%;
+}
+
+.background .BoxItem:hover a:hover::after {
+  width: 100%;
+}
+
+.background .BoxItem:hover a::after {
+  display: block;
+  position: relative;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #00b9e7;
+  transition: width 0.4s ease-in-out;
+}
+
+.background .BoxItem:hover a::before {
+  display: block;
+  position: relative;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #00b9e7;
+  transition: width 0.4s ease-in-out, right 0.4s ease-in-out;
 }
 
 .background .BoxItem {
@@ -286,6 +321,8 @@ header {
   text-decoration: none;
   font-size: 1.5vw;
   color: #ffffff;
+  display: inline-block;
+  position: relative;
 }
 
 /* Navigation */
@@ -304,25 +341,25 @@ header {
   font-family: 'Gaegu', cursive;
 }
 
-.navBar .menuItem {
+.navBar .menuItem a {
   display: inline-block;
   position: relative;
 }
 
-.navBar a:hover {
-  color: #f6ae48;
+.navBar .menuItem a:hover {
+  color: #3ef3d5fa;
 }
 
-.navBar .menuItem:hover::before {
+.navBar .menuItem a:hover::before {
   width: 50.5%;
   left: 0;
 }
 
-.navBar .menuItem:hover::after {
+.navBar .menuItem a:hover::after {
   width: 50.5%;
 }
 
-.navBar .menuItem::after {
+.navBar .menuItem a::after {
   display: block;
   position: absolute;
   content: "";
@@ -334,7 +371,7 @@ header {
   bottom: 0;
 }
 
-.navBar .menuItem::before {
+.navBar .menuItem a::before {
   display: block;
   position: absolute;
   content: "";
@@ -351,6 +388,10 @@ header {
   width: 30%;
   text-align: center;
   justify-content: center;
+}
+
+.ToggleBar .menuLogo :hover {
+  color: #3ef3d5fa;
 }
 
 .ToggleBar .menuOpen {
@@ -435,7 +476,6 @@ header {
   .background h1 {
     font-size: 5vw;
     padding-bottom: 2vh;
-    font-family: Gaegu;
   }
 
   .background .headerText {
