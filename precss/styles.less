@@ -135,6 +135,7 @@ header {
         
         > a {      
             color: #00b9e7;
+            
         }
     }
 
@@ -226,12 +227,53 @@ header {
         text-decoration: none;
         color: black;
         font-size: 1.5vw;
-        font-family: 'Gaegu', cursive;
+        font-family: 'Gaegu', cursive;        
     }
     
-    a:hover{
-        color: #f6ae48;	
+    .menuItem {  
+        display: inline-block;
+        position: relative;
     }
+
+    a:hover{
+        color: #f6ae48;        	
+    }
+
+    // підкреслення ссилки
+    
+    .menuItem:hover::before{
+        width: 50.5%;
+        left: 0;
+    }
+    .menuItem:hover::after{
+        width: 50.5%;
+    }
+
+    .menuItem::after{
+        display: block;
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0;
+        background-color: #00b9e7;
+        transition: width .3s ease-in-out;
+        left: 50%;
+        bottom: 0;
+    }
+
+    .menuItem::before{
+        display: block;
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0;
+        background-color: #00b9e7;
+        transition: width .3s ease-in-out, left .3s ease-in-out;
+        left: 50%;
+        bottom: 0;
+    }
+
+
 }
 
 .ToggleBar{
