@@ -485,6 +485,7 @@ header {
 
   .background .BoxItem {
     margin: 4vh 1vh;
+    height: 10vh;
   }
 
   .navBar {
